@@ -17,7 +17,7 @@ set $W3  3:
 set $W4  4:
 set $W5  5:
 set $W6  6:
-set $W7  7:
+set $W7  7:
 set $W8  8:
 set $W9  9:
 set $W0 10:
@@ -178,11 +178,12 @@ bindsym $mod+r mode "resize"
 
 # Startups #
 exec --no-startup-id fcitx
-exec --no-startup-id volumeicon
+#exec --no-startup-id volumeicon
 exec --no-startup-id sogou-autostart
 #exec --no-startup-id nm-applet
-exec --no-startup-id xautolock -locker lock -time 10 -corners 0-00&&xset dpms force off
-exec --no-startup-id feh --bg-fill ~/pic/snow-covered-top-of-the-mountain-hd-desktop-wallpaper.jpg
+exec --no-startup-id xautolock -locker lock -time 10 -corners 0-00
+exec --no-startup-id feh --bg-fill ~/pic/snow-mountain-sunset-wallpaper-4.jpg
+exec --no-startup-id xset dpms 0 0 1800
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -196,7 +197,7 @@ bar {
             strip_workspace_numbers yes
     colors {
         background #555555
-        #background #10101000
+        #background #00000000
         statusline #ffffff
         focused_workspace  #4c7899 #285577 #55ff55
         active_workspace   #333333 #5f676a #ffffff
@@ -217,8 +218,8 @@ mode "$mode_app"{
     bindsym c exec chromium,mode "default"
     bindsym p exec phpstorm,mode "default"
     bindsym t exec thunar,mode "default"
-    bindsym v exec virtulabox mode "default"
-    bindsym g exec goldendict mode "default"
+    bindsym v exec virtualbox,mode "default"
+    bindsym g exec goldendict,mode "default"
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
