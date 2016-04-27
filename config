@@ -16,11 +16,11 @@ set $W2  2:
 set $W3  3:
 set $W4  4:
 set $W5  5:
-set $W6  6:
+set $W6  6:
 set $W7  7:
 set $W8  8:
-set $W9  9:
-set $W0 10:
+set $W9  9:
+set $W0 10:
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -129,7 +129,7 @@ bindsym $mod+6 workspace $W6
 bindsym $mod+7 workspace $W7
 bindsym $mod+8 workspace $W8
 bindsym $mod+9 workspace $W9
-bindsym $mod+0 workspace $W10
+bindsym $mod+0 workspace $W0
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $W1
@@ -141,7 +141,7 @@ bindsym $mod+Shift+6 move container to workspace $W6
 bindsym $mod+Shift+7 move container to workspace $W7
 bindsym $mod+Shift+8 move container to workspace $W8
 bindsym $mod+Shift+9 move container to workspace $W9
-bindsym $mod+Shift+0 move container to workspace $W10
+bindsym $mod+Shift+0 move container to workspace $W0
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -182,7 +182,7 @@ exec --no-startup-id fcitx
 exec --no-startup-id sogou-autostart
 #exec --no-startup-id nm-applet
 exec --no-startup-id xautolock -locker lock -time 10 -corners 0-00
-exec --no-startup-id feh --bg-fill ~/pic/snow-mountain-sunset-wallpaper-4.jpg
+exec --no-startup-id feh --bg-fill ~/pic/1920x1080_mountain_fog-1437091.jpg
 exec --no-startup-id xset dpms 0 0 1800
 
 
@@ -192,7 +192,7 @@ bar {
     position top
             #status_command conky -c ~/.config/i3/conkyrc
             status_command i3blocks -c ~/.config/i3/i3blocks.conf
-            font pango:Droid Sans Fallback 11
+            font pango:Droid Sans Fallback 12
             # 隐藏工作区数字名
             strip_workspace_numbers yes
     colors {
