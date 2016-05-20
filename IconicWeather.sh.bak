@@ -45,11 +45,5 @@ my $night = "";
 binmode(STDOUT, ":utf8");
 print "$night";
 }
-if($values[0] eq "Thunderstorms")
-{
-my $thunderstorms = ":";
-binmode(STDOUT, ":utf8");
-print "$thunderstorms";
-}
 print"$values[1]"; }'
 

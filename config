@@ -182,8 +182,20 @@ exec --no-startup-id fcitx
 exec --no-startup-id sogou-autostart
 #exec --no-startup-id nm-applet
 exec --no-startup-id xautolock -locker lock -time 10 -corners 0-00
-exec --no-startup-id feh --bg-fill ~/pic/1920x1080_mountain_fog-1437091.jpg
+exec --no-startup-id feh --bg-fill ~/pic/snow-mountain-sunset-wallpaper-4.jpg
 exec --no-startup-id xset dpms 0 0 1800
+exec --no-startup-id redshift -c ~/.config/redshift.conf
+
+# 把当前窗口设为便笺本
+bindsym $mod+Shift+minus move scratchpad
+
+# 呼出第一个便笺本
+bindsym $mod+minus scratchpad show
+
+# 自动启动goldendict
+exec --no-startup-id goldendict -name scratchpad
+# 当激活时，送往便笺本
+for_window [class="(?i)goldendict" instance="scratchpad"] move scratchpad
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
